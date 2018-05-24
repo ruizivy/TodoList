@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruiz.ruiznatalioprelimexam.SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/pnlheader"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="#e53935"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50sp"
+            android:textColor="#FFFF"
+            android:text="To Do App"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollfill"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/pnlheader"
+        >
+
+        <LinearLayout
+            android:id="@+id/pnlbody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#424242"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/pnlforminput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pnlcolorstatus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbltitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19px"
+                    android:text="TITLE"
+                    android:textColor="#ffcdd2"
+                    android:textSize="35px"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txttitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#ffff"
+                    android:textColor="#ffff"
+                    android:hint="Type here your Title. . . "
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/lbldetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:text="DETAILS"
+                    android:textColor="#ffcdd2"
+                    android:textSize="35px"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:textColorHint="#ffff"
+                    android:textColor="#ffff"
+                    android:hint="Type here your Details. . . "
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pnldatetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pnlline"
+                android:layout_margin="15px"
+                android:background="#424242"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginTop="20px"
+                    android:text="FROM"
+                    android:textColor="#ffcdd2"
+                    android:textSize="35px"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginLeft="30px"
+                        android:layout_width="72px"
+                        android:layout_height="72px"
+                        android:background="@mipmap/date2"
+                        android:layout_marginTop="20px"
+                        />
+                    <Button
+                        android:id="@+id/btnfrmdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_weight="50"
+                        android:background="#ef5350"
+                        android:spinnerMode="dialog"
+                        android:text="date"
+                        android:layout_marginRight="10px"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="22px" />
+                    <ImageView
+                        android:layout_width="72px"
+                        android:layout_height="72px"
+                        android:background="@mipmap/time2"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="20px"
+                        />
+                    <Button
+                        android:id="@+id/btnfrmtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_weight="50"
+                        android:background="#ef5350"
+                        android:spinnerMode="dialog"
+                        android:text="time"
+                        android:textStyle="bold"
+                        android:layout_marginRight="30px"
+                        android:textColor="#fff"
+                        android:textSize="22px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lbl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginTop="20px"
+                    android:text="TO"
+                    android:textColor="#ffcdd2"
+                    android:textSize="35px"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="30px"
+                        android:layout_width="72px"
+                        android:layout_height="72px"
+                        android:background="@mipmap/date2"
+                        android:layout_marginTop="20px"
+                        />
+                    <Button
+                        android:id="@+id/btntodate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_weight="50"
+                        android:background="#ef5350"
+                        android:spinnerMode="dialog"
+                        android:text="date"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10px"
+                        android:textColor="#fff"
+                        android:textSize="22px" />
+                    <ImageView
+                        android:layout_width="72px"
+                        android:layout_height="72px"
+                        android:background="@mipmap/time2"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="20px"
+                        />
+                    <Button
+                        android:id="@+id/btntotime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_weight="50"
+                        android:background="#ef5350"
+                        android:spinnerMode="dialog"
+                        android:text="time"
+                        android:textStyle="bold"
+                        android:layout_marginRight="30px"
+                        android:textColor="#fff"
+                        android:textSize="22px" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pnlline"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/pnlforminput"
+                android:layout_marginBottom="20px"
+                android:background="#142b2b"
+                android:orientation="horizontal" />
+
+
+            <TextView
+                android:id="@+id/lbl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pnldatetime"
+                android:layout_marginTop="20px"
+                android:text="PRIORITY"
+                android:textAlignment="center"
+                android:textColor="#ffcdd2"
+                android:textSize="35px"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pnlpriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl3"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:id="@+id/lbllow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_weight="50"
+                    android:text="LOW"
+                    android:textAlignment="textStart"
+                    android:textColor="#fff"
+                    android:textSize="25px"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/lblmedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_weight="50"
+                    android:text="MEDUIM"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="25px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblhigh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_weight="50"
+                    android:text="HIGH"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFF"
+                    android:textSize="25px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sbpriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pnlpriority"
+                android:layout_margin="20px"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sbpriority"
+                android:layout_margin="20px"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:layout_weight="50"
+                    android:background="#ef5350"
+                    android:spinnerMode="dialog"
+                    android:text="SAVE"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="22px" />
+
+                <Button
+                    android:id="@+id/btn_Cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:layout_weight="50"
+                    android:background="#e53935"
+                    android:spinnerMode="dialog"
+                    android:text="CANCEL"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="22px" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
